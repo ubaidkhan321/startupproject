@@ -1,7 +1,7 @@
 import 'package:newsapp/const/const.dart';
 
 class AppStyle {
-  TextStyle regular(
+ static TextStyle regular(
       {Color? color,
       String? fontfamily = Appfont.regular,
       FontWeight? fontweight = FontWeight.normal,
@@ -13,9 +13,9 @@ class AppStyle {
         fontSize: fontsize);
   }
 
-  TextStyle semibold(
+ static  TextStyle semibold(
       {Color? color,
-      FontWeight? fontweight,
+      FontWeight? fontweight = FontWeight.normal,
       double? fontsize = 14.0,
       String? fontfamily = Appfont.semibold}) {
     return TextStyle(
@@ -25,7 +25,7 @@ class AppStyle {
         fontSize: fontsize);
   }
 
-    TextStyle bold(
+   static TextStyle bold(
       {Color? color,
       String? fontfamily = Appfont.bold,
       FontWeight? fontweight,
